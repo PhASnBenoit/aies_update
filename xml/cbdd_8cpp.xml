@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cbdd_8cpp" kind="file" language="C++">
+    <compoundname>cbdd.cpp</compoundname>
+    <includes refid="cbdd_8h" local="yes">cbdd.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>QSettings</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="6">
+        <label>QDebug</label>
+      </node>
+      <node id="8">
+        <label>QString</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="7">
+        <label>pa.h</label>
+        <link refid="pa_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>cbdd.h</label>
+        <link refid="cbdd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QVariant</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="0">
+        <label>cbdd.cpp</label>
+        <link refid="cbdd_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cbdd_8h" kindref="compound">cbdd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_c_bdd_1a143af0cd78677b186b21f7fde000bd47" kindref="member">CBdd::CBdd</ref>(<ref refid="classpa" kindref="compound">pa</ref><sp/>*<sp/>therpi)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>rpi<sp/>=<sp/>therpi;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd<sp/>=QSqlDatabase::addDatabase(rpi-&gt;<ref refid="classpa_1a99d295be977badb4ae1b1ea53524014a" kindref="member">getBddType</ref>());</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd.setDatabaseName(rpi-&gt;<ref refid="classpa_1a2d78ba09b6363e09e2790fc02958c4b8" kindref="member">getBddName</ref>());</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd.setHostName(rpi-&gt;<ref refid="classpa_1a3df07baa146f97193b7b9a3ae1140043" kindref="member">getBddHostname</ref>());</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd.setUserName(rpi-&gt;<ref refid="classpa_1ad49129d63cc17e79ac65a737878db6dc" kindref="member">getBddUsername</ref>());</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd.setPassword(rpi-&gt;<ref refid="classpa_1a91e383e941e9ac2127078ed66aa043fd" kindref="member">getBddPassword</ref>());</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Aies_bdd.open())</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug(</highlight><highlight class="stringliteral">&quot;Ouverture<sp/>de<sp/>la<sp/>base<sp/>de<sp/>donnée<sp/>impossible&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//system(&quot;/sbin/reboot&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="class_c_bdd_1a9f44808b492a8d452be714c448343aff" kindref="member">CBdd::~CBdd</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>rpi;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Aies_bdd.close();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a1d416240e0c0fe0149225903b95b5b68" kindref="member">CBdd::getNbRowDiff</ref>(QString<sp/>date_actu)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>aiesquery(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>as<sp/>nb<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=2<sp/>and<sp/>date<sp/>&lt;=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>date_actu);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>aiesquery.next();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aiesquery.value(0).toInt();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1afc12439ad60b75ceb75c4bb2f1b2caf2" kindref="member">CBdd::moveDiff</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>data(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>*<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>data.next();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>updatequery(</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>rpi_update<sp/>SET<sp/>version<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data.value(1).toString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>date<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data.value(2).toString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>date_create<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data.value(3).toString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>path<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data.value(4).toString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>data.value(5).toInt()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>WHERE<sp/>id=1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>deletequery(</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a621da4147829af8badfd9951f35e1cdc" kindref="member">CBdd::getVersionPerma</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>aiesquery(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>version<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>aiesquery.next();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aiesquery.value(0).toFloat();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">QString<sp/><ref refid="class_c_bdd_1a51cf64e1fc626d749b33870e567d4908" kindref="member">CBdd::getPathPerma</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>aiesquery(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>path<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>aiesquery.next();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aiesquery.value(0).toString();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a707d743efac02b36d190be436647ad72" kindref="member">CBdd::getSizePerma</ref>()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>aiesquery(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>size<sp/>FROM<sp/>rpi_update<sp/>WHERE<sp/>id=1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>aiesquery.next();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aiesquery.value(0).toInt();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="cbdd.cpp"/>
+  </compounddef>
+</doxygen>

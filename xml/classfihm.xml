@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfihm" kind="class" language="C++" prot="public">
+    <compoundname>fihm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="fihm_8h" local="no">fihm.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfihm_1a64b275c1257e7cd0676454f15868f35e" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* fihm::timerui</definition>
+        <argsstring></argsstring>
+        <name>timerui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="40" column="1" bodyfile="fihm.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfihm_1a3ded72ca7df8287a9739a50aee1d7224" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* fihm::timer_download</definition>
+        <argsstring></argsstring>
+        <name>timer_download</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="41" column="1" bodyfile="fihm.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfihm_1a17b87998a4f202014ab5125317fa63d2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_c_bdd" kindref="compound">CBdd</ref> *</type>
+        <definition>CBdd* fihm::bdd</definition>
+        <argsstring></argsstring>
+        <name>bdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="42" column="1" bodyfile="fihm.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfihm_1ae5c48b54629664120b347d4e34914ce7" prot="private" static="no" mutable="no">
+        <type><ref refid="classpa" kindref="compound">pa</ref> *</type>
+        <definition>pa* fihm::rpi</definition>
+        <argsstring></argsstring>
+        <name>rpi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="43" column="1" bodyfile="fihm.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfihm_1ab15f848224884c15995e586daa928bda" prot="private" static="no" mutable="no">
+        <type>Ui::fihm *</type>
+        <definition>Ui::fihm* fihm::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="44" column="1" bodyfile="fihm.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfihm_1a275a6a4c6cbf07b8c3e7973afaa4e34c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fihm::sizePerma</definition>
+        <argsstring></argsstring>
+        <name>sizePerma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="46" column="1" bodyfile="fihm.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfihm_1a973ce16a185f94a75836829aad7d91b8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fihm::fihm</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>fihm</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="25" column="1" bodyfile="fihm.cpp" bodystart="4" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classfihm_1a47516046c345ebe38ed7bcc06c654831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fihm::~fihm</definition>
+        <argsstring>()</argsstring>
+        <name>~fihm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="26" column="1" bodyfile="fihm.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classfihm_1a56cf8177da2697edc5030851c35b176f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fihm::getUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>getUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classfihm_1a2741fde101fdba4ec10ecf454a8cf855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fihm::ontimerui</definition>
+        <argsstring>()</argsstring>
+        <name>ontimerui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="30" column="1" bodyfile="fihm.cpp" bodystart="61" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="slot" id="classfihm_1a6907c731aff4254c6759edbf1a115bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fihm::ontimer_download</definition>
+        <argsstring>()</argsstring>
+        <name>ontimer_download</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="31" column="1" bodyfile="fihm.cpp" bodystart="102" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfihm_1af8decf3acdd52891eeb0fe57071d8746" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fihm::diffExist</definition>
+        <argsstring>()</argsstring>
+        <name>diffExist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="34" column="1" bodyfile="fihm.cpp" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classfihm_1a0abf45636740ba33d9acba66dd98f420" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fihm::compConfig</definition>
+        <argsstring>()</argsstring>
+        <name>compConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="35" column="1" bodyfile="fihm.cpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classfihm_1a63bda9bdc69c1a0328d77635afe88cdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fihm::dwnldZip</definition>
+        <argsstring>()</argsstring>
+        <name>dwnldZip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="36" column="1" bodyfile="fihm.cpp" bodystart="94" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classfihm_1a27de9667fda61c6ba06cae4db7c599b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fihm::makeUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>makeUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fihm.h" line="37" column="1" bodyfile="fihm.cpp" bodystart="129" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QMainWindow</label>
+      </node>
+      <node id="2">
+        <label>fihm</label>
+        <link refid="classfihm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>QMainWindow</label>
+      </node>
+      <node id="4">
+        <label>fihm</label>
+        <link refid="classfihm"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="fihm.h" line="21" column="1" bodyfile="fihm.h" bodystart="20" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classfihm_1a17b87998a4f202014ab5125317fa63d2" prot="private" virt="non-virtual"><scope>fihm</scope><name>bdd</name></member>
+      <member refid="classfihm_1a0abf45636740ba33d9acba66dd98f420" prot="private" virt="non-virtual"><scope>fihm</scope><name>compConfig</name></member>
+      <member refid="classfihm_1af8decf3acdd52891eeb0fe57071d8746" prot="private" virt="non-virtual"><scope>fihm</scope><name>diffExist</name></member>
+      <member refid="classfihm_1a63bda9bdc69c1a0328d77635afe88cdb" prot="private" virt="non-virtual"><scope>fihm</scope><name>dwnldZip</name></member>
+      <member refid="classfihm_1a973ce16a185f94a75836829aad7d91b8" prot="public" virt="non-virtual"><scope>fihm</scope><name>fihm</name></member>
+      <member refid="classfihm_1a56cf8177da2697edc5030851c35b176f" prot="public" virt="non-virtual"><scope>fihm</scope><name>getUpdate</name></member>
+      <member refid="classfihm_1a27de9667fda61c6ba06cae4db7c599b7" prot="private" virt="non-virtual"><scope>fihm</scope><name>makeUpdate</name></member>
+      <member refid="classfihm_1a6907c731aff4254c6759edbf1a115bd6" prot="public" virt="non-virtual"><scope>fihm</scope><name>ontimer_download</name></member>
+      <member refid="classfihm_1a2741fde101fdba4ec10ecf454a8cf855" prot="public" virt="non-virtual"><scope>fihm</scope><name>ontimerui</name></member>
+      <member refid="classfihm_1ae5c48b54629664120b347d4e34914ce7" prot="private" virt="non-virtual"><scope>fihm</scope><name>rpi</name></member>
+      <member refid="classfihm_1a275a6a4c6cbf07b8c3e7973afaa4e34c" prot="private" virt="non-virtual"><scope>fihm</scope><name>sizePerma</name></member>
+      <member refid="classfihm_1a3ded72ca7df8287a9739a50aee1d7224" prot="private" virt="non-virtual"><scope>fihm</scope><name>timer_download</name></member>
+      <member refid="classfihm_1a64b275c1257e7cd0676454f15868f35e" prot="private" virt="non-virtual"><scope>fihm</scope><name>timerui</name></member>
+      <member refid="classfihm_1ab15f848224884c15995e586daa928bda" prot="private" virt="non-virtual"><scope>fihm</scope><name>ui</name></member>
+      <member refid="classfihm_1a47516046c345ebe38ed7bcc06c654831" prot="public" virt="non-virtual"><scope>fihm</scope><name>~fihm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

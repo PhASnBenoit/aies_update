@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cbdd_8h" kind="file" language="C++">
+    <compoundname>cbdd.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">QSqlQuery</includes>
+    <includes local="no">QSqlDatabase</includes>
+    <includes local="no">QVariant</includes>
+    <includes local="no">QDebug</includes>
+    <includes refid="pa_8h" local="yes">pa.h</includes>
+    <includedby refid="cbdd_8cpp" local="yes">cbdd.cpp</includedby>
+    <includedby refid="fihm_8h" local="yes">fihm.h</includedby>
+    <incdepgraph>
+      <node id="22">
+        <label>QSettings</label>
+      </node>
+      <node id="23">
+        <label>fstream</label>
+      </node>
+      <node id="17">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="19">
+        <label>QDebug</label>
+      </node>
+      <node id="21">
+        <label>QString</label>
+      </node>
+      <node id="24">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="20">
+        <label>pa.h</label>
+        <link refid="pa_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cbdd.h</label>
+        <link refid="cbdd_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QVariant</label>
+      </node>
+      <node id="15">
+        <label>stdio.h</label>
+      </node>
+      <node id="25">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="29">
+        <label>fihm.cpp</label>
+        <link refid="fihm_8cpp"/>
+      </node>
+      <node id="28">
+        <label>fihm.h</label>
+        <link refid="fihm_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>cbdd.h</label>
+        <link refid="cbdd_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="27">
+        <label>cbdd.cpp</label>
+        <link refid="cbdd_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_bdd" prot="public">CBdd</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CBDD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CBDD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlQuery&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlDatabase&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pa_8h" kindref="compound">pa.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_c_bdd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_bdd" kindref="compound">CBdd</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_bdd_1a143af0cd78677b186b21f7fde000bd47" kindref="member">CBdd</ref>(<ref refid="classpa" kindref="compound">pa</ref><sp/>*<sp/>rpi);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_bdd_1a9f44808b492a8d452be714c448343aff" kindref="member">~CBdd</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//getter<sp/>and<sp/>setter<sp/>bdd<sp/>(ordre<sp/>chrono<sp/>d&apos;appel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a1d416240e0c0fe0149225903b95b5b68" kindref="member">getNbRowDiff</ref>(QString<sp/>date_actu);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1afc12439ad60b75ceb75c4bb2f1b2caf2" kindref="member">moveDiff</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a621da4147829af8badfd9951f35e1cdc" kindref="member">getVersionPerma</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_c_bdd_1a51cf64e1fc626d749b33870e567d4908" kindref="member">getPathPerma</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_bdd_1a707d743efac02b36d190be436647ad72" kindref="member">getSizePerma</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fin<sp/>getter<sp/>and<sp/>sett<sp/><sp/>bdd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpa" kindref="compound">pa</ref><sp/>*<sp/>rpi;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlDatabase<sp/>Aies_bdd;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CBDD_H</highlight></codeline>
+    </programlisting>
+    <location file="cbdd.h"/>
+  </compounddef>
+</doxygen>

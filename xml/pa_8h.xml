@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="pa_8h" kind="file" language="C++">
+    <compoundname>pa.h</compoundname>
+    <includes local="no">QString</includes>
+    <includes local="no">QDebug</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">istream</includes>
+    <includedby refid="cbdd_8h" local="yes">cbdd.h</includedby>
+    <includedby refid="fihm_8h" local="yes">fihm.h</includedby>
+    <includedby refid="pa_8cpp" local="yes">pa.cpp</includedby>
+    <incdepgraph>
+      <node id="112">
+        <label>QSettings</label>
+      </node>
+      <node id="113">
+        <label>fstream</label>
+      </node>
+      <node id="111">
+        <label>QDebug</label>
+      </node>
+      <node id="110">
+        <label>QString</label>
+      </node>
+      <node id="114">
+        <label>iostream</label>
+      </node>
+      <node id="109">
+        <label>pa.h</label>
+        <link refid="pa_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="120">
+        <label>fihm.cpp</label>
+        <link refid="fihm_8cpp"/>
+      </node>
+      <node id="122">
+        <label>pa.cpp</label>
+        <link refid="pa_8cpp"/>
+      </node>
+      <node id="119">
+        <label>fihm.h</label>
+        <link refid="fihm_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>pa.h</label>
+        <link refid="pa_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>cbdd.h</label>
+        <link refid="cbdd_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="118">
+        <label>cbdd.cpp</label>
+        <link refid="cbdd_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classpa" prot="public">pa</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;istream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classpa" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpa" kindref="compound">pa</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>BddType;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>BddHostname;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>BddName;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>BddUsername;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>BddPassword;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>NumVersion;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>MacAdress;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpa_1a07eb7f64668fd6f5fec7a228d0544ec6" kindref="member">pa</ref>();<sp/></highlight><highlight class="comment">//recupere<sp/>les<sp/>info<sp/>dans<sp/>le<sp/>fichier<sp/>config</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpa_1ae553988696927447744da62db9d6002a" kindref="member">~pa</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1a99d295be977badb4ae1b1ea53524014a" kindref="member">getBddType</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1a3df07baa146f97193b7b9a3ae1140043" kindref="member">getBddHostname</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1a2d78ba09b6363e09e2790fc02958c4b8" kindref="member">getBddName</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1ad49129d63cc17e79ac65a737878db6dc" kindref="member">getBddUsername</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1a91e383e941e9ac2127078ed66aa043fd" kindref="member">getBddPassword</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classpa_1a83df9d07dfeead4dc8481474d688597e" kindref="member">getNumVersion</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classpa_1a51626442cfcaa86fc860531a15fbe5a8" kindref="member">getMacAdress</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PA_H</highlight></codeline>
+    </programlisting>
+    <location file="pa.h"/>
+  </compounddef>
+</doxygen>

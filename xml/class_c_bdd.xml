@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_c_bdd" kind="class" language="C++" prot="public">
+    <compoundname>CBdd</compoundname>
+    <includes refid="cbdd_8h" local="no">cbdd.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_bdd_1ab4d0b30544515dd0845d3f6d48be8893" prot="private" static="no" mutable="no">
+        <type><ref refid="classpa" kindref="compound">pa</ref> *</type>
+        <definition>pa* CBdd::rpi</definition>
+        <argsstring></argsstring>
+        <name>rpi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="27" column="1" bodyfile="cbdd.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_bdd_1a56da1cf125d7ff766665c14aaf339e68" prot="private" static="no" mutable="no">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase CBdd::Aies_bdd</definition>
+        <argsstring></argsstring>
+        <name>Aies_bdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="28" column="1" bodyfile="cbdd.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_bdd_1a143af0cd78677b186b21f7fde000bd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBdd::CBdd</definition>
+        <argsstring>(pa *rpi)</argsstring>
+        <name>CBdd</name>
+        <param>
+          <type><ref refid="classpa" kindref="compound">pa</ref> *</type>
+          <declname>rpi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="14" column="1" bodyfile="cbdd.cpp" bodystart="3" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1a9f44808b492a8d452be714c448343aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBdd::~CBdd</definition>
+        <argsstring>()</argsstring>
+        <name>~CBdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="15" column="1" bodyfile="cbdd.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1a1d416240e0c0fe0149225903b95b5b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CBdd::getNbRowDiff</definition>
+        <argsstring>(QString date_actu)</argsstring>
+        <name>getNbRowDiff</name>
+        <param>
+          <type>QString</type>
+          <declname>date_actu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="19" column="1" bodyfile="cbdd.cpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1afc12439ad60b75ceb75c4bb2f1b2caf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBdd::moveDiff</definition>
+        <argsstring>()</argsstring>
+        <name>moveDiff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="20" column="1" bodyfile="cbdd.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1a621da4147829af8badfd9951f35e1cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CBdd::getVersionPerma</definition>
+        <argsstring>()</argsstring>
+        <name>getVersionPerma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="21" column="1" bodyfile="cbdd.cpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1a51cf64e1fc626d749b33870e567d4908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString CBdd::getPathPerma</definition>
+        <argsstring>()</argsstring>
+        <name>getPathPerma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="22" column="1" bodyfile="cbdd.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_bdd_1a707d743efac02b36d190be436647ad72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CBdd::getSizePerma</definition>
+        <argsstring>()</argsstring>
+        <name>getSizePerma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cbdd.h" line="23" column="1" bodyfile="cbdd.cpp" bodystart="54" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cbdd.h" line="12" column="1" bodyfile="cbdd.h" bodystart="11" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_c_bdd_1a56da1cf125d7ff766665c14aaf339e68" prot="private" virt="non-virtual"><scope>CBdd</scope><name>Aies_bdd</name></member>
+      <member refid="class_c_bdd_1a143af0cd78677b186b21f7fde000bd47" prot="public" virt="non-virtual"><scope>CBdd</scope><name>CBdd</name></member>
+      <member refid="class_c_bdd_1a1d416240e0c0fe0149225903b95b5b68" prot="public" virt="non-virtual"><scope>CBdd</scope><name>getNbRowDiff</name></member>
+      <member refid="class_c_bdd_1a51cf64e1fc626d749b33870e567d4908" prot="public" virt="non-virtual"><scope>CBdd</scope><name>getPathPerma</name></member>
+      <member refid="class_c_bdd_1a707d743efac02b36d190be436647ad72" prot="public" virt="non-virtual"><scope>CBdd</scope><name>getSizePerma</name></member>
+      <member refid="class_c_bdd_1a621da4147829af8badfd9951f35e1cdc" prot="public" virt="non-virtual"><scope>CBdd</scope><name>getVersionPerma</name></member>
+      <member refid="class_c_bdd_1afc12439ad60b75ceb75c4bb2f1b2caf2" prot="public" virt="non-virtual"><scope>CBdd</scope><name>moveDiff</name></member>
+      <member refid="class_c_bdd_1ab4d0b30544515dd0845d3f6d48be8893" prot="private" virt="non-virtual"><scope>CBdd</scope><name>rpi</name></member>
+      <member refid="class_c_bdd_1a9f44808b492a8d452be714c448343aff" prot="public" virt="non-virtual"><scope>CBdd</scope><name>~CBdd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
