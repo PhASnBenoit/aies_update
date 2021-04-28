@@ -64,7 +64,7 @@ void fihm::dwnldZip()
     qDebug() << "fihm::dwnldZip création du répertoire /tmp/aies";
     system("mkdir /tmp/aies/");
     QString command = "wget --limit-rate=10k -b -O /tmp/aies/updateAIES.tgz http://" + rpi->getBddHostname() +
-            "/2018/htdocs" + bdd->getPathPerma() + " -o /tmp/aies/log_update.txt";
+            "/aies" + bdd->getPathPerma() + " -o /tmp/aies/log_update.txt";
     qDebug() << "fihm::dwnldZip téléchargement... " << command;
     system(command.toStdString().c_str());
     sizePerma = bdd->getSizePerma();
