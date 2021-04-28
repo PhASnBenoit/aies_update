@@ -3,7 +3,7 @@
 
 pa::pa()
 { // info du config
-    QSettings settings("/home/pi/aies/aies2018/aies.ini", QSettings::IniFormat);
+    QSettings settings("/opt/aies/aies.ini", QSettings::IniFormat);
 
     BddType = settings.value("Bdd/type", "QMYSQL").toString();
     BddHostname = settings.value("Serveur/ip", "10.73.254.1").toString();
