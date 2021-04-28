@@ -73,14 +73,14 @@ void fihm::dwnldZip()
 
 void fihm::makeUpdate()
 {
-    qDebug() << "fihm::makeUpdate effacement du répertoire /home/pi/essai";
-    system("rm /home/pi/aies -R");
-    qDebug() << "fihm::makeUpdate décompresse dans le dossier /home/pi";
-    system("tar xzf /tmp/aies/updateAIES.tgz -C /home/pi/");
-    qDebug() << "fihm::makeUpdate effacement du dossier /mnt/aies";
+    qDebug() << "fihm::makeUpdate effacement du répertoire /opt/aies";
+    system("rm /opt/aies/*.* -R");
+    qDebug() << "fihm::makeUpdate décompresse dans le dossier /opt/aies";
+    system("tar xzf /tmp/aies/updateAIES.tgz -C /opt/aies/");
+    qDebug() << "fihm::makeUpdate effacement du dossier /tmp/aies";
     system("rm /tmp/aies -R");
     qDebug() << "fihm::makeUpdate changement des droits";
-    system("chmod -R 755 /home/pi/aies");
+    system("chmod -R 755 /opt/aies");
 
     ui->progressBar->setValue(100);
     ui->lb_operation->setText("Installation terminée !");
